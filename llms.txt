@@ -1,0 +1,23 @@
+# Clansurf: a framework for resilient offline local economies
+
+> Clansurf is a framework for running a neighbourhood's own economy without the cloud or a gatekeeper: the radios, the rules and the record. It makes the people who grow, make and fix things visible to the people nearby. Clansurf helps communities and organisations adopt it, then steps back once the node runs without them.
+
+## What a node is
+- One node covers a radius of about 200 metres.
+- It holds up to ten providers, one per trade, plus the households around them and one node manager.
+- The people who live there own it and decide who joins, who leaves and who leads. Clansurf never decides who belongs.
+
+## How it works (the framework's three layers)
+- Hardware (offline): inexpensive LoRa radios pass messages hop by hop across the neighbourhood, with no mobile data. The locality buys the kit directly and owns it. Clansurf does not sell hardware.
+- Community (offline): providers, households and a node manager, governed by the people inside the node.
+- Governance node (syncs): deliveries and receipts are signed on the device and kept in a local append-only record. When a connection is available, the record is anchored on a public chain so anyone can check it. It records deliveries, not money. Clansurf never handles payments.
+
+## Status and roadmap
+- Status: framework in development, written up as a working paper. No nodes are running yet.
+- Planned: 25 or more nodes across Southeast Asia and East Africa.
+- Planned: local AI agents running on the node's own hardware to keep the record tidy. Agents never make decisions; people do.
+
+## Links
+- Working paper: https://paper.clansurf.com/
+- Work with us: research[at]clansurf[dot]com (replies within a week)
+- Clansurf is research from HuyoWorld: https://www.huyoworld.com/
