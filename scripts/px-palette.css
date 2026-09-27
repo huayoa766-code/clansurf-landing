@@ -1,0 +1,46 @@
+/* ---------- pixel art palette ----------
+   Every pixel in the scenes is a class k-<name> that reads --px-<name>.
+   Light mode is daytime; dark mode is the same street at night. */
+:root {
+  --px-sky: #a9d8f2; --px-sky2: #d6eef7; --px-star: var(--px-sky); --px-cloud: #f4f8f9; --px-moon: #f6e7a8;
+  --px-hill: #9fd6a0; --px-hill2: #74bd7c;
+  --px-tree: #3f9a58; --px-treel: #6cc070; --px-treed: #2a6e45; --px-trunk: #8a5a36; --px-trunkd: #6a4128;
+  --px-grass: #6cc06a; --px-grass2: #47a052;
+  --px-road: #5d6270; --px-roadl: #e9e2c4; --px-pave: #c9cbd1; --px-paved: #a4a8b2;
+  --px-walla: #f1d9ae; --px-wallb: #eaa47c; --px-wallc: #a9c3e0; --px-walld: #b8e0c0; --px-walle: #f2c96a;
+  --px-roofa: #c4552f; --px-roofb: #45507f; --px-roofc: #7a4632; --px-roofd: #2f7a4d;
+  --px-edge: #4a4458; --px-trim: #fbf3e2; --px-frame: #fbf3e2; --px-win: #33405f; --px-winl: #f7d774; --px-door: #6b4330;
+  --px-wood: #b98450; --px-woodd: #7f5431; --px-sign: #f6ecd2; --px-awnw: #fbf3e2;
+  --px-red: #d9533f; --px-redd: #a8392b; --px-yellow: #f2b83b; --px-green: #3f9a58; --px-teal: #2fa39a; --px-blue: #3f78c9;
+  --px-pink: #e98aa5; --px-indigo: #45507f; --px-white: #fbf3e2; --px-pants: #394157;
+  --px-skin1: #f5d0aa; --px-skin2: #d9a06f; --px-skin3: #a9704a; --px-skin4: #6e4430;
+  --px-hair1: #2a211d; --px-hair2: #7a4a2a; --px-hair3: #cfc9bd;
+  --px-ink: #1f1d26; --px-metal: #9aa0ad; --px-metald: #5f6573; --px-signal: #45507f;
+  --px-milk: #fbfaf5; --px-egg: #f7e6c3; --px-egg2: #e9cf9f; --px-carrot: #ec7a2c; --px-leaf: #3f9a58; --px-leaf2: #6cc070;
+  --px-tomato: #d9433a; --px-tomato2: #f07a62; --px-water: #4f9ee0; --px-water2: #9ccff4;
+  --px-lamp: #ffd76a; --px-sun: #ffcf4a; --px-sunl: #ffe58f; --px-sunray: #ffe58f; --px-cat: #e39a4a; --px-dash: #45507f;
+  --px-chain: #45507f; --px-chainl: #8d97c9; --px-chaind: #2b3358; --px-gov: #1f1d26;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --px-sky: #141b36; --px-sky2: #22305a; --px-star: #e8ecff; --px-cloud: #2c3864; --px-sun: #efe3b4; --px-sunl: #fbf3d6; --px-sunray: var(--px-sky);
+    --px-hill: #1f4a3c; --px-hill2: #183d31; --px-grass: #2e6b45; --px-grass2: #24583a;
+    --px-win: #f2c95c; --px-signal: #ffd76a; --px-dash: #aab5de; --px-road: #3a3f4d; --px-roadl: #8f8a73;
+    --px-pave: #4b4f5c; --px-paved: #3b3f4a; --px-trim: #cfc6b0; --px-frame: #cfc6b0;
+  }
+}
+:root[data-theme="dark"] {
+  --px-sky: #141b36; --px-sky2: #22305a; --px-star: #e8ecff; --px-cloud: #2c3864; --px-sun: #efe3b4; --px-sunl: #fbf3d6; --px-sunray: var(--px-sky);
+  --px-hill: #1f4a3c; --px-hill2: #183d31; --px-grass: #2e6b45; --px-grass2: #24583a;
+  --px-win: #f2c95c; --px-signal: #ffd76a; --px-dash: #aab5de; --px-road: #3a3f4d; --px-roadl: #8f8a73;
+    --px-pave: #4b4f5c; --px-paved: #3b3f4a; --px-trim: #cfc6b0; --px-frame: #cfc6b0;
+}
+/* the blackout scene is always night, with the lights out */
+.px-night {
+  --px-sky: #10162e; --px-sky2: #1b2447; --px-star: #e8ecff; --px-hill: #1a3a31; --px-hill2: #16322a;
+  --px-win: #262d48; --px-winl: #262d48; --px-signal: #ffd76a;
+  --px-walla: #8f7f68; --px-wallb: #8a6452; --px-wallc: #5f6f8a; --px-walld: #62806c; --px-walle: #8f7a45;
+  --px-roofa: #6e3624; --px-roofb: #2c3358; --px-roofc: #4a2c22; --px-roofd: #1f4a33;
+  --px-trim: #9a9486; --px-frame: #6f6c66; --px-pave: #4b4f5c; --px-paved: #3b3f4a;
+  --px-tree: #24583a; --px-treel: #2f6b45; --px-treed: #173d29;
+}
