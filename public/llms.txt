@@ -2,7 +2,7 @@
 
 > Clansurf is a framework for groups of people to meet everyday needs with tech they own themselves: food, clothing, repairs, computing. It rests on one idea: everyone should get the chance to create value, instead of having it taken from them.
 
-Research from HuyoWorld (https://www.huyoworld.com/), started by Joshua Poddoku (https://www.joshuapoddoku.com/).
+Research from HuyoWorld (https://www.huyoworld.com/).
 
 ## How it works
 - A node is a group of people working together. Each node decides for itself: who joins, who leaves, its own rules and what it offers. Nobody outside can overrule it, Clansurf included.
