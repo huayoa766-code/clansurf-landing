@@ -1,0 +1,32 @@
+# Clansurf: where people and local tech meet everyday human needs
+
+> Clansurf is a framework for groups of people to meet everyday needs with tech they own themselves: food, clothing, repairs, computing. It rests on one idea: everyone should get the chance to create value, instead of having it taken from them.
+
+Research from HuyoWorld (https://www.huyoworld.com/), started by Joshua Poddoku (https://www.joshuapoddoku.com/).
+
+## How it works
+- A node is a group of people working together. Each node decides for itself: who joins, who leaves, its own rules and what it offers. Nobody outside can overrule it, Clansurf included.
+- Three roles: makers (make or provide what others need), supporters (use, pay for or fund it), maintainers (keep the node working and true to the idea, help both sides, take part in research).
+- Joining a node takes a yes from one maker, one supporter and one maintainer.
+- Local means owned by the people who use it, not necessarily nearby. A node can be a place (one street) or people linked by what they own and offer, wherever they live.
+- All nodes together keep a small network body that looks after the shared principles and the Clansurf name. It can't overrule a node.
+- Local AI on a node's own hardware can keep the record tidy. It never decides; people do.
+
+## Use cases
+- One street: a node on radios the neighbours own, working offline. https://www.clansurf.com/use-cases/street/
+- The working paper makes the full case for the street use case: https://paper.clansurf.com/
+
+## Vision and status
+- Vision: shaping humanity to serve, to be better and to be productive, for good reasons.
+- Status: framework in development. No nodes are running yet.
+- Planned: 25 or more nodes of different kinds across Southeast Asia and East Africa.
+
+## Docs for volunteer researchers
+Drafts, updated as research comes in.
+- Start here: https://www.clansurf.com/docs/
+- How Clansurf is organised: https://www.clansurf.com/docs/structure/
+- Open questions: https://www.clansurf.com/docs/research/
+- How to volunteer: https://www.clansurf.com/docs/volunteer/
+
+## Contact
+- research[at]clansurf[dot]com

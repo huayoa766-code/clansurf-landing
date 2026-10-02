@@ -1,0 +1,19 @@
+{
+  "name": "clansurf-landing",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev --port 4323",
+    "build": "astro build",
+    "build:offline": "astro build --outDir offline && node scripts/offline.mjs offline",
+    "preview": "astro preview --port 4323",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "astro": "^7.3.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "typescript": "^6.0.3"
+  }
+}

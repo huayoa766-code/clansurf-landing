@@ -1,5 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "astro",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "redirects": [
     { "source": "/work-with-us", "destination": "https://paper.clansurf.com/work-with-us", "permanent": true },
     { "source": "/work-with-us.html", "destination": "https://paper.clansurf.com/work-with-us", "permanent": true },

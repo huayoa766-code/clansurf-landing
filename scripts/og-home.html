@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- Source for public/og-home.png (1200x630), the home page's card: the same ground and panel
+     as the street card, with many small nodes instead of one street. The nodes are written in by
+     scripts/pixel.py; then run: node scripts/og-image.cjs -->
+<html lang="en"><head><meta charset="UTF-8">
+<link href="../public/fonts.css" rel="stylesheet">
+<style>
+html,body{margin:0}
+body{width:1200px;height:630px;overflow:hidden;background:#f5c84a;position:relative;font-family:'Archivo',sans-serif}
+.street{position:absolute;right:0;top:40px;width:560px;height:590px;overflow:hidden;border-top:4px solid #1f1d26;border-left:4px solid #1f1d26;box-sizing:border-box}
+.street svg{display:block;width:556px;height:586px}
+.panel{position:absolute;left:44px;top:44px;width:660px;height:542px;background:#183a2b;color:#eef3ee;box-sizing:border-box;padding:44px 48px}
+.brand{display:flex;align-items:center;gap:14px;font-weight:750;font-stretch:90%;font-size:30px;letter-spacing:-0.01em}
+.brand img{width:48px;height:48px;image-rendering:pixelated;background:#eef3ee;border-radius:4px;padding:3px;box-sizing:border-box}
+h1{margin:44px 0 0;font-weight:800;font-stretch:72%;font-size:72px;white-space:nowrap;line-height:0.92;letter-spacing:-0.022em}
+h1 span{display:block} h1 em{font-style:normal;color:#f5c84a}
+.url{position:absolute;left:52px;bottom:44px;font-stretch:125%;font-weight:650;font-size:19px;letter-spacing:0.05em;color:#f5c84a}
+.nodes{position:absolute;left:744px;top:68px;width:412px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px 12px}
+.nodes svg{display:block;width:100%;height:auto;image-rendering:pixelated}
+.px-t{font-family:Archivo;font-weight:750;font-stretch:75%;font-size:3.7px;fill:#4a2f1c}
+</style><!--px:css--><style>
+/* ---------- pixel art palette ----------
+   Every pixel in the scenes is a class k-<name> that reads --px-<name>.
+   Light mode is daytime; dark mode is the same street at night. */
+:root {
+  --px-sky: #a9d8f2; --px-sky2: #d6eef7; --px-star: var(--px-sky); --px-cloud: #f4f8f9; --px-moon: #f6e7a8;
+  --px-hill: #9fd6a0; --px-hill2: #74bd7c;
+  --px-tree: #3f9a58; --px-treel: #6cc070; --px-treed: #2a6e45; --px-trunk: #8a5a36; --px-trunkd: #6a4128;
+  --px-grass: #6cc06a; --px-grass2: #47a052;
+  --px-road: #5d6270; --px-roadl: #e9e2c4; --px-pave: #c9cbd1; --px-paved: #a4a8b2;
+  --px-walla: #f1d9ae; --px-wallb: #eaa47c; --px-wallc: #a9c3e0; --px-walld: #b8e0c0; --px-walle: #f2c96a;
+  --px-roofa: #c4552f; --px-roofb: #45507f; --px-roofc: #7a4632; --px-roofd: #2f7a4d;
+  --px-edge: #4a4458; --px-trim: #fbf3e2; --px-frame: #fbf3e2; --px-win: #33405f; --px-winl: #f7d774; --px-door: #6b4330;
+  --px-wood: #b98450; --px-woodd: #7f5431; --px-sign: #f6ecd2; --px-awnw: #fbf3e2;
+  --px-red: #d9533f; --px-redd: #a8392b; --px-yellow: #f2b83b; --px-green: #3f9a58; --px-teal: #2fa39a; --px-blue: #3f78c9;
+  --px-pink: #e98aa5; --px-indigo: #45507f; --px-white: #fbf3e2; --px-pants: #394157;
+  --px-skin1: #f5d0aa; --px-skin2: #d9a06f; --px-skin3: #a9704a; --px-skin4: #6e4430;
+  --px-hair1: #2a211d; --px-hair2: #7a4a2a; --px-hair3: #cfc9bd;
+  --px-ink: #1f1d26; --px-metal: #9aa0ad; --px-metald: #5f6573; --px-signal: #45507f;
+  --px-milk: #fbfaf5; --px-egg: #f7e6c3; --px-egg2: #e9cf9f; --px-carrot: #ec7a2c; --px-leaf: #3f9a58; --px-leaf2: #6cc070;
+  --px-tomato: #d9433a; --px-tomato2: #f07a62; --px-water: #4f9ee0; --px-water2: #9ccff4;
+  --px-lamp: #ffd76a; --px-sun: #ffcf4a; --px-sunl: #ffe58f; --px-sunray: #ffe58f; --px-cat: #e39a4a; --px-dash: #45507f;
+  --px-chain: #45507f; --px-chainl: #8d97c9; --px-chaind: #2b3358; --px-gov: #1f1d26;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --px-sky: #141b36; --px-sky2: #22305a; --px-star: #e8ecff; --px-cloud: #2c3864; --px-sun: #efe3b4; --px-sunl: #fbf3d6; --px-sunray: var(--px-sky);
+    --px-hill: #1f4a3c; --px-hill2: #183d31; --px-grass: #2e6b45; --px-grass2: #24583a;
+    --px-win: #f2c95c; --px-signal: #ffd76a; --px-dash: #aab5de; --px-road: #3a3f4d; --px-roadl: #8f8a73;
+    --px-pave: #4b4f5c; --px-paved: #3b3f4a; --px-trim: #cfc6b0; --px-frame: #cfc6b0;
+  }
+}
+:root[data-theme="dark"] {
+  --px-sky: #141b36; --px-sky2: #22305a; --px-star: #e8ecff; --px-cloud: #2c3864; --px-sun: #efe3b4; --px-sunl: #fbf3d6; --px-sunray: var(--px-sky);
+  --px-hill: #1f4a3c; --px-hill2: #183d31; --px-grass: #2e6b45; --px-grass2: #24583a;
+  --px-win: #f2c95c; --px-signal: #ffd76a; --px-dash: #aab5de; --px-road: #3a3f4d; --px-roadl: #8f8a73;
+    --px-pave: #4b4f5c; --px-paved: #3b3f4a; --px-trim: #cfc6b0; --px-frame: #cfc6b0;
+}
+/* the blackout scene is always night, with the lights out */
+.px-night {
+  --px-sky: #10162e; --px-sky2: #1b2447; --px-star: #e8ecff; --px-hill: #1a3a31; --px-hill2: #16322a;
+  --px-win: #262d48; --px-winl: #262d48; --px-signal: #ffd76a;
+  --px-walla: #8f7f68; --px-wallb: #8a6452; --px-wallc: #5f6f8a; --px-walld: #62806c; --px-walle: #8f7a45;
+  --px-roofa: #6e3624; --px-roofb: #2c3358; --px-roofc: #4a2c22; --px-roofd: #1f4a33;
+  --px-trim: #9a9486; --px-frame: #6f6c66; --px-pave: #4b4f5c; --px-paved: #3b3f4a;
+  --px-tree: #24583a; --px-treel: #2f6b45; --px-treed: #173d29;
+}
+
+.px .k-awnw { fill: var(--px-awnw); }
+.px .k-blue { fill: var(--px-blue); }
+.px .k-carrot { fill: var(--px-carrot); }
+.px .k-cat { fill: var(--px-cat); }
+.px .k-chain { fill: var(--px-chain); }
+.px .k-chaind { fill: var(--px-chaind); }
+.px .k-chainl { fill: var(--px-chainl); }
+.px .k-cloud { fill: var(--px-cloud); }
+.px .k-dash { fill: var(--px-dash); }
+.px .k-door { fill: var(--px-door); }
+.px .k-edge { fill: var(--px-edge); }
+.px .k-egg { fill: var(--px-egg); }
+.px .k-egg2 { fill: var(--px-egg2); }
+.px .k-frame { fill: var(--px-frame); }
+.px .k-gov { fill: var(--px-gov); }
+.px .k-grass { fill: var(--px-grass); }
+.px .k-grass2 { fill: var(--px-grass2); }
+.px .k-green { fill: var(--px-green); }
+.px .k-hair1 { fill: var(--px-hair1); }
+.px .k-hair2 { fill: var(--px-hair2); }
+.px .k-hair3 { fill: var(--px-hair3); }
+.px .k-hill { fill: var(--px-hill); }
+.px .k-hill2 { fill: var(--px-hill2); }
+.px .k-indigo { fill: var(--px-indigo); }
+.px .k-ink { fill: var(--px-ink); }
+.px .k-lamp { fill: var(--px-lamp); }
+.px .k-leaf { fill: var(--px-leaf); }
+.px .k-leaf2 { fill: var(--px-leaf2); }
+.px .k-metal { fill: var(--px-metal); }
+.px .k-metald { fill: var(--px-metald); }
+.px .k-milk { fill: var(--px-milk); }
+.px .k-moon { fill: var(--px-moon); }
+.px .k-pants { fill: var(--px-pants); }
+.px .k-pave { fill: var(--px-pave); }
+.px .k-paved { fill: var(--px-paved); }
+.px .k-pink { fill: var(--px-pink); }
+.px .k-red { fill: var(--px-red); }
+.px .k-redd { fill: var(--px-redd); }
+.px .k-road { fill: var(--px-road); }
+.px .k-roadl { fill: var(--px-roadl); }
+.px .k-roofa { fill: var(--px-roofa); }
+.px .k-roofb { fill: var(--px-roofb); }
+.px .k-roofc { fill: var(--px-roofc); }
+.px .k-roofd { fill: var(--px-roofd); }
+.px .k-sign { fill: var(--px-sign); }
+.px .k-signal { fill: var(--px-signal); }
+.px .k-skin1 { fill: var(--px-skin1); }
+.px .k-skin2 { fill: var(--px-skin2); }
+.px .k-skin3 { fill: var(--px-skin3); }
+.px .k-skin4 { fill: var(--px-skin4); }
+.px .k-sky { fill: var(--px-sky); }
+.px .k-sky2 { fill: var(--px-sky2); }
+.px .k-star { fill: var(--px-star); }
+.px .k-sun { fill: var(--px-sun); }
+.px .k-sunl { fill: var(--px-sunl); }
+.px .k-sunray { fill: var(--px-sunray); }
+.px .k-teal { fill: var(--px-teal); }
+.px .k-tomato { fill: var(--px-tomato); }
+.px .k-tomato2 { fill: var(--px-tomato2); }
+.px .k-tree { fill: var(--px-tree); }
+.px .k-treed { fill: var(--px-treed); }
+.px .k-treel { fill: var(--px-treel); }
+.px .k-trim { fill: var(--px-trim); }
+.px .k-trunk { fill: var(--px-trunk); }
+.px .k-trunkd { fill: var(--px-trunkd); }
+.px .k-walla { fill: var(--px-walla); }
+.px .k-wallb { fill: var(--px-wallb); }
+.px .k-wallc { fill: var(--px-wallc); }
+.px .k-walld { fill: var(--px-walld); }
+.px .k-walle { fill: var(--px-walle); }
+.px .k-water { fill: var(--px-water); }
+.px .k-water2 { fill: var(--px-water2); }
+.px .k-white { fill: var(--px-white); }
+.px .k-win { fill: var(--px-win); }
+.px .k-winl { fill: var(--px-winl); }
+.px .k-wood { fill: var(--px-wood); }
+.px .k-woodd { fill: var(--px-woodd); }
+.px .k-yellow { fill: var(--px-yellow); }
+</style><!--/px:css--></head><body>
+<div class="nodes"><!--px:minis--><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofb" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8z"/><path class="k-roofd" d="M0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-wallb" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofa" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8z"/><path class="k-roofd" d="M0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-walle" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofd" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8zM0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-walle" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofb" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8z"/><path class="k-roofd" d="M0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-walld" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofd" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8zM0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-walla" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofd" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8zM0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-walld" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofd" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8zM0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-wallc" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofa" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8z"/><path class="k-roofd" d="M0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-wallc" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofa" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8z"/><path class="k-roofd" d="M0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-wallb" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofc" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8z"/><path class="k-roofd" d="M0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-walla" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofa" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8z"/><path class="k-roofd" d="M0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-wallc" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofd" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8zM0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-wallc" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofb" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8z"/><path class="k-roofd" d="M0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-wallb" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofb" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8z"/><path class="k-roofd" d="M0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-walle" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofb" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8z"/><path class="k-roofd" d="M0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-walle" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><svg class="px px-mini" viewBox="0 0 16 16" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><path class="k-metald" d="M4 0h3v1h-3z"/><path class="k-metal" d="M5 1h1v2h-1z"/><path class="k-trim" d="M1 2h3v1h-3zM6 2h3v1h-3z"/><path class="k-roofa" d="M4 2h1v1h-1zM2 3h6v1h-6zM1 4h8v1h-8z"/><path class="k-roofd" d="M0 5h11v1h-11z"/><path class="k-treel" d="M11 7h2v1h-2zM10 8h2v2h-2zM11 10h1v1h-1z"/><path class="k-tree" d="M13 7h1v1h-1zM12 8h2v2h-2zM10 10h1v1h-1zM13 10h1v1h-1zM10 11h3v1h-3z"/><path class="k-treed" d="M14 8h1v3h-1zM12 10h1v1h-1zM13 11h2v1h-2zM11 12h3v1h-3z"/><path class="k-edge" d="M1 6h1v8h-1zM8 6h1v8h-1z"/><path class="k-wallb" d="M2 6h6v8h-6z"/><path class="k-trunk" d="M11 13h3v1h-3z"/><path class="k-grass" d="M0 14h16v2h-16z"/></svg><!--/px:minis--></div>
+<div class="panel">
+  <div class="brand"><img src="../public/logo.svg" alt="">Clansurf</div>
+  <h1><span>Where people and</span><span>local tech meet</span><em><span>everyday human</span><span>needs.</span></em></h1>
+  <div class="url">clansurf.com</div>
+</div>
+</body></html>

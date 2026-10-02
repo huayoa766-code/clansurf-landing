@@ -1,4 +1,4 @@
-"""Draws the landing page's pixel-art scenes and writes them into index.html.
+"""Draws the landing page's pixel-art scenes and writes them into the home page and the street use case.
 
 Every scene is built on a small grid of colour keys, then exported as SVG with
 one <path> per colour. Colours are CSS variables (--px-<key>), so the page's
@@ -727,8 +727,6 @@ def inject(html, name, svg):
 
 def main():
     root = Path(__file__).resolve().parent.parent
-    page = root / "index.html"
-    html = page.read_text()
     blocks = {
         "hero": hero_scene().svg("px-hero", "A street inside one node: seven stalls selling milk, eggs, vegetables, water, tailoring, carpentry and repairs, neighbours on the pavement, and a node radio on the tallest roof relaying to radios on two other roofs"),
         "stack": stack_scene().svg("px-stack"),
@@ -747,10 +745,12 @@ def main():
     css = (root / "scripts" / "px-palette.css").read_text()
     css += "\n" + "\n".join(f".px .k-{k} {{ fill: var(--px-{k}); }}" for k in keys)
     blocks["css"] = "<style>\n" + css + "\n</style>"
-    for name, svg in blocks.items():
-        if f"<!--px:{name}-->" in html:
-            html = inject(html, name, svg)
-    page.write_text(html)
+    for page in (root / "public" / "index.html", root / "public" / "use-cases" / "street" / "index.html"):
+        html = page.read_text()
+        for name, svg in blocks.items():
+            if f"<!--px:{name}-->" in html:
+                html = inject(html, name, svg)
+        page.write_text(html)
 
     # the social card uses a crop of the hero street around the node radio
     og = root / "scripts" / "og-image.html"
@@ -760,6 +760,14 @@ def main():
             'preserveAspectRatio="xMidYMax meet"', 'preserveAspectRatio="xMidYMax slice"'))
         card = inject(card, "css", blocks["css"])
         og.write_text(card)
+    # the home page's card shows many small nodes
+    ogh = root / "scripts" / "og-home.html"
+    if ogh.exists():
+        card = ogh.read_text()
+        minis = "".join(mini_node(i * 7 + 3).svg("px-mini") for i in range(16))
+        card = inject(card, "minis", minis)
+        card = inject(card, "css", blocks["css"])
+        ogh.write_text(card)
     print({k: len(v) for k, v in blocks.items()})
 
 
