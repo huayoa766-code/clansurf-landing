@@ -91,6 +91,33 @@ A node like the Norway and Mauritius example has people living under different l
 
 <section class="q">
 
+### How can a node manage what it shares, fairly and where everyone can see it?
+
+A node will share things: tools, space, hardware. Everyone should be able to see what's there and who used it, without one person keeping the books.
+
+<p class="ask">How co-operatives, community groups and open-source projects keep shared resources visible and fair, and where it broke down.</p>
+</section>
+
+<section class="q">
+
+### What else could Clansurf be used for?
+
+So far we've written up one use case, a single street. We think there are more, like people sharing computing they own. We'd like to find them from real needs, not guess them.
+
+<p class="ask">Needs in your area that people meet today through a platform, or don't meet at all, and who nearby already makes or provides what's needed.</p>
+</section>
+
+<section class="q">
+
+### What can the tech people already own do for their neighbours?
+
+Phones, radios, a spare computer, a solar panel. Clansurf works with tech people own, so we need to know what's actually there.
+
+<p class="ask">What people in your area own and use every day, what it costs them to run, and what breaks.</p>
+</section>
+
+<section class="q">
+
 ### What goes wrong with radios in real life?
 
 Nodes on a street use LoRa radios to talk to each other without the internet. No node is running yet, so we don't have field experience of our own.

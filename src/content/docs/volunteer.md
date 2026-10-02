@@ -1,19 +1,53 @@
 ---
 title: How to volunteer
 nav: How to volunteer
-description: You can help from anywhere in the world. Here's how to get in touch and how to send us what you find.
+description: You can help from anywhere in the world. Here's what volunteer researchers do, who we're looking for, and how to get in touch.
 order: 4
 updated: 2026-10-02
 ---
 
-We're looking for people who'd like to take one of the open questions and look into it properly. You don't need a title or a university behind you. What matters is that you can show where your information comes from.
+We're looking for volunteer researchers to help shape how Clansurf is designed and developed. You'll explore practical questions about communities, technology, trust, governance and local value creation. Your research may help decide how nodes are started, run and connected across different communities and countries.
+
+No degree or formal title is needed. What matters is that you can show where your information comes from.
+
+## What you'd do
+
+- Research and develop practical use cases for Clansurf.
+- Run field surveys, locally or remotely.
+- Speak with people in your community and write down what they need.
+- Look into how communities, DAOs and decentralised networks run themselves.
+- Gather sources and check that they're reliable.
+- Send us your findings, ideas and recommendations.
+- Work with the other researchers and contributors around Clansurf and HuyoWorld.
+
+## Who fits
+
+We're looking for people who:
+
+- care about people, communities and what technology does to society;
+- can back up their ideas with reliable sources or real-world experience;
+- write and talk clearly;
+- are curious, independent and willing to learn;
+- research carefully and listen to different points of view.
+
+Experience with any of these helps:
+
+- DAOs or community governance
+- community organising
+- LoRa or mesh networks
+- decentralised technology
+- local economic development
+- field research or interviewing
+- open-source projects
+
+It's an unpaid volunteer role for now. You choose how much time you give, and you can take part remotely, locally or both.
 
 ## Getting started
 
 <ol class="steps">
 <li><b>Have a read</b><span>Start with <a href="/docs/structure/">how Clansurf is organised</a> and the <a href="/docs/research/">open questions</a>.</span></li>
 <li><b>Pick a question</b><span>Or tell us about one we've missed.</span></li>
-<li><b>Write to us</b><span>Tell us who you are, where you are, and which question you'd like to take. A few lines is plenty.</span></li>
+<li><b>Write to us</b><span>Tell us your name and a little about yourself, where you're based, your experience or interests, the question you'd like to take, and how much time you expect to give.</span></li>
 </ol>
 
 <a class="email" href="#doc" data-u="hcraeser" data-d="moc.frusnalc">research<span>[at]</span>clansurf<span>[dot]</span>com</a>
@@ -27,8 +61,22 @@ Short is good. One clear page with good sources helps us more than a long report
 Two things we ask:
 
 - **Don't fill the gaps yourself.** If a source doesn't say something, please don't say it either. "We don't know yet" is a useful answer.
-- **Ask before you quote anyone by name.**
+- **Ask before you quote anyone by name**, including the people you speak with in your community.
 
 ## What happens next
 
 We read what you send. If it holds up, it changes these pages, and it may go into the next version of the [working paper](https://paper.clansurf.com/). When a page changes, its date changes too, so you can see what's new.
+
+## Being credited
+
+Contributors can get a named record of their contribution to Clansurf. With your permission, your name, what you contributed, your research topic and relevant links can be acknowledged in the docs, project records, publications or other official Clansurf channels.
+
+Recognition depends on what you contributed and how good it is. We'll always talk it through with you, and nothing about you is published until you've approved it.
+
+It isn't a salary, a payment, an ownership stake or a promise of future work.
+
+## Where this can go
+
+Research is the starting point. As Clansurf develops, researchers may get the chance to become maintainers, start a node in their own community, and build it with the people who live there.
+
+These roles, and any funding for them, aren't guaranteed yet. Your research will help shape how they work.
