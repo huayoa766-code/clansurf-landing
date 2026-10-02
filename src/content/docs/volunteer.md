@@ -10,6 +10,8 @@ We're looking for volunteer researchers to help shape how Clansurf is designed a
 
 No degree or formal title is needed. What matters is that you can show where your information comes from.
 
+We announced the call for volunteer researchers [on X](https://x.com/JoshuaPoddoku/status/2105889038393913849). If you came from there, welcome.
+
 ## What you'd do
 
 - Research and develop practical use cases for Clansurf.
