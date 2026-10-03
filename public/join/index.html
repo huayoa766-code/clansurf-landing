@@ -178,7 +178,11 @@ form { margin-top: clamp(28px, 3.4vw, 44px); border-top: 1px solid var(--ink); }
   font-size: clamp(1.15rem, 1.6vw, 1.35rem);
   line-height: 1.2;
 }
-.q legend { margin-bottom: 10px; }
+/* A legend sits on the fieldset's top edge and ignores its padding, so
+   float it: then the question keeps the same space as the others. */
+fieldset.q { display: block; }
+fieldset.q > legend { float: left; width: 100%; padding: 0; margin-bottom: 10px; }
+fieldset.q > legend + * { clear: both; }
 .hint { color: var(--ink-3); font-size: 1rem; max-width: 34em; }
 .opt { display: flex; gap: 12px; align-items: baseline; padding: 6px 0; cursor: pointer; }
 .opt input { flex: none; width: 1.1rem; height: 1.1rem; accent-color: var(--green); transform: translateY(0.15em); }
@@ -225,6 +229,7 @@ textarea:focus { box-shadow: 0 0 0 1px var(--green); }
    Without JavaScript every question shows at once, as a plain list. */
 .stepped .q { display: none; border-bottom: 0; }
 .stepped .q.on { display: grid; min-height: 16rem; align-content: start; }
+.stepped fieldset.q.on { display: block; }
 .stepped:not(.at-review) .send { display: none; }
 .stepped.at-review .step-nav .btn { display: none; }
 /* Back, Next and the count stay at the bottom of the screen while the form
