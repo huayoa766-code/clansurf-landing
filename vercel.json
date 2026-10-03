@@ -4,14 +4,60 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "redirects": [
-    { "source": "/work-with-us", "destination": "https://paper.clansurf.com/work-with-us", "permanent": true },
-    { "source": "/work-with-us.html", "destination": "https://paper.clansurf.com/work-with-us", "permanent": true },
-    { "source": "/versions", "destination": "https://paper.clansurf.com/versions", "permanent": true },
-    { "source": "/versions.html", "destination": "https://paper.clansurf.com/versions", "permanent": true },
-    { "source": "/versions/:path*", "destination": "https://paper.clansurf.com/versions/:path*", "permanent": true },
-    { "source": "/index.pdf", "destination": "https://paper.clansurf.com/clansurf-the-shop-that-closes-at-five.pdf", "permanent": true },
-    { "source": "/work-with-us.pdf", "destination": "https://paper.clansurf.com/clansurf-working-with-us.pdf", "permanent": true },
-    { "source": "/clansurf-:name.pdf", "destination": "https://paper.clansurf.com/clansurf-:name.pdf", "permanent": true },
-    { "source": "/assets/:path*", "destination": "https://paper.clansurf.com/assets/:path*", "permanent": true }
+    {
+      "source": "/docs/volunteer",
+      "destination": "/docs/contribute/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/volunteer/",
+      "destination": "/docs/contribute/",
+      "permanent": true
+    },
+    {
+      "source": "/work-with-us",
+      "destination": "https://paper.clansurf.com/work-with-us",
+      "permanent": true
+    },
+    {
+      "source": "/work-with-us.html",
+      "destination": "https://paper.clansurf.com/work-with-us",
+      "permanent": true
+    },
+    {
+      "source": "/versions",
+      "destination": "https://paper.clansurf.com/versions",
+      "permanent": true
+    },
+    {
+      "source": "/versions.html",
+      "destination": "https://paper.clansurf.com/versions",
+      "permanent": true
+    },
+    {
+      "source": "/versions/:path*",
+      "destination": "https://paper.clansurf.com/versions/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/index.pdf",
+      "destination": "https://paper.clansurf.com/clansurf-the-shop-that-closes-at-five.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/work-with-us.pdf",
+      "destination": "https://paper.clansurf.com/clansurf-working-with-us.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/clansurf-:name.pdf",
+      "destination": "https://paper.clansurf.com/clansurf-:name.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "https://paper.clansurf.com/assets/:path*",
+      "permanent": true
+    }
   ]
 }

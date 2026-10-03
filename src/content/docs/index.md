@@ -6,6 +6,8 @@ order: 1
 updated: 2026-10-02
 ---
 
+Clansurf helps a group of people make their node productive. People help each other and contribute in their own way, and the node's own rules stop anyone from abusing it.
+
 Clansurf began with a simple observation. Most streets already have someone who sells milk, someone who sells eggs, a tailor, a carpenter. People nearby often don't know they're there, and an app with a server in another country shouldn't be needed to find them. The [street use case](/use-cases/street/) and the [working paper](https://paper.clansurf.com/) are about that first idea: a small group on one street, using radios they own, that keeps working even when the internet doesn't.
 
 Since then the idea has grown. It isn't only about streets now. It's about people and the tech they own coming together to meet everyday needs, like food, clothing, repairs or computing, wherever those people are.
@@ -14,7 +16,7 @@ We're working out how all of this should be organised, and we're doing it in the
 
 ## Who these pages are for
 
-They're for volunteer researchers, wherever you live. You might know about co-operatives, community radio, open-source projects or village councils, or you might have run something like this yourself. If you'd like to help us think it through, start here.
+They're for contributors, wherever you live. You might know about co-operatives, community radio, open-source projects or village councils, or you might have run something like this yourself. If you'd like to help us think it through, start here.
 
 ## Please read this as a draft
 
@@ -33,7 +35,8 @@ Everything else is still open, and the [open questions](/docs/research/) page li
 
 - **[How Clansurf is organised](/docs/structure/)** covers the three roles, the two kinds of node, how someone joins, and what the network body does.
 - **[Open questions](/docs/research/)** lists what we haven't worked out yet, with a note on each about where to look.
-- **[How to volunteer](/docs/volunteer/)** is the practical part: writing to us, and sending your work back.
+- **[How to contribute](/docs/contribute/)** is the practical part: writing to us, and sending your work back.
+- **[Help start one of the first 25 nodes](/join/)** if you would rather take part in a node than research one.
 
 ## How this fits with the paper
 

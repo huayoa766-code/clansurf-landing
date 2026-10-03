@@ -21,7 +21,7 @@ When you send us something, it helps if you can tell us:
 
 ### How does the very first node get started?
 
-Joining needs a maker, a supporter and a maintainer to say yes. But on day one, a new node has none of them. Someone has to start it, maybe the network body or a founding maintainer, and that needs a clear written rule.
+Joining needs a maker, a supporter and a maintainer to say yes, and then a vote of the members. But on day one, a new node has none of them. Someone has to start it, maybe the network body or a founding maintainer, and that needs a clear written rule.
 
 <p class="ask">How do new co-operatives, chapters or local groups take in their first members? And how do they stop the founder from holding on to control?</p>
 </section>
@@ -113,7 +113,7 @@ So far we've written up one use case, a single street. We think there are more, 
 
 Phones, radios, a spare computer, a solar panel. Clansurf works with tech people own, so we need to know what's actually there.
 
-<p class="ask">What people in your area own and use every day, what it costs them to run, and what breaks.</p>
+<p class="ask">What people in your area own and use every day, what it takes to run, and what breaks.</p>
 </section>
 
 <section class="q">

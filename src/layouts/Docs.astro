@@ -89,7 +89,7 @@ const pageTitle = entry.id === "index" ? "Clansurf docs" : `${entry.data.nav} ·
 
     <footer class="foot fine">
       <div class="wrap">
-        <span>Clansurf, 2026. Research from <a href="https://www.huyoworld.com/">HuyoWorld</a>.</span>
+        <span>Clansurf (beta), 2026. Research from <a href="https://www.huyoworld.com/">HuyoWorld</a>.</span>
         <span><a href="https://paper.clansurf.com/">Working paper</a> · No trackers. No cookies.</span>
       </div>
     </footer>
@@ -104,6 +104,26 @@ const pageTitle = entry.id === "index" ? "Clansurf docs" : `${entry.data.nav} ·
           a.addEventListener(e, arm, { once: true, passive: true });
         });
         a.addEventListener("click", arm);
+      });
+
+      /* A "#" before each section heading. It links to that section, and
+         a click also copies the link, so a section can be shared. */
+      document.querySelectorAll(".prose h2[id], .prose h3[id]").forEach(function (h) {
+        var a = document.createElement("a");
+        a.className = "h-link";
+        a.href = "#" + h.id;
+        a.textContent = "#";
+        a.setAttribute("aria-label", "Link to this section: " + h.textContent.trim());
+        a.addEventListener("click", function () {
+          var url = location.href.split("#")[0] + "#" + h.id;
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(url).then(function () {
+              a.classList.add("copied");
+              setTimeout(function () { a.classList.remove("copied"); }, 1500);
+            }, function () {});
+          }
+        });
+        h.insertBefore(a, h.firstChild);
       });
     </script>
   </body>
@@ -281,6 +301,15 @@ const pageTitle = entry.id === "index" ? "Clansurf docs" : `${entry.data.nav} ·
     font-size: 1.3rem;
     line-height: 1.15;
   }
+  .prose h2[id], .prose h3[id] { scroll-margin-top: 24px; }
+  .h-link { margin-right: 0.3em; color: var(--ink-3); font-weight: 500; text-decoration: none; }
+  .h-link:hover, .h-link:focus-visible { color: var(--green); }
+  .h-link.copied::after {
+    content: "Link copied";
+    margin-left: 0.6em;
+    font-family: var(--display); font-stretch: 125%; font-weight: 600; font-size: 0.68rem;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--green); vertical-align: middle;
+  }
   .prose h2 + *, .prose h3 + * { margin-top: 0.6em; }
   .prose h2 + * { margin-top: 1em; }
   .prose ul, .prose ol { padding-left: 1.2em; }
@@ -405,6 +434,9 @@ const pageTitle = entry.id === "index" ? "Clansurf docs" : `${entry.data.nav} ·
     .prose tr { border-bottom: 1px solid var(--rule); padding: 10px 0 12px; }
     .prose td { border: 0; padding: 0; }
     .prose td:first-child { font-family: var(--display); font-stretch: 125%; font-weight: 600; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 4px; }
+    /* A table whose cells carry their column name keeps it when stacked. */
+    .prose td[data-label]:not(:first-child) { margin-top: 8px; }
+    .prose td[data-label]:not(:first-child)::before { content: attr(data-label); display: block; font-family: var(--display); font-stretch: 125%; font-weight: 600; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); }
   }
 
   /* wide: contents hang in columns 1–3, the text runs 4–10 and the title past it */

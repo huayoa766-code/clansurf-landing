@@ -20,7 +20,7 @@ updated: 2026-10-02
   <text class="o-small" x="20" y="71">the shared tools and the name.</text>
 
   <rect class="o-box o-open" x="240" y="8" width="112" height="78"/>
-  <text class="o-title" x="252" y="32">RESERVE</text>
+  <text class="o-title" x="252" y="32">RESOURCES</text>
   <text class="o-small" x="252" y="54">Undecided.</text>
 
   <g class="o-arrow">
@@ -30,7 +30,7 @@ updated: 2026-10-02
   </g>
   <text class="o-note" x="72" y="122">principles</text>
   <text class="o-note" x="176" y="122">research</text>
-  <text class="o-note" x="304" y="122">funding?</text>
+  <text class="o-note" x="304" y="122">undecided</text>
 
   <rect class="o-back" x="20" y="162" width="332" height="384"/>
   <rect class="o-back" x="14" y="156" width="332" height="384"/>
@@ -44,16 +44,16 @@ updated: 2026-10-02
     <path d="M165 362 H80 V318" fill="none"/>
     <path d="M183 362 H268 V318" fill="none"/>
   </g>
-  <text class="o-note" x="174" y="253" text-anchor="middle">trade and support</text>
+  <text class="o-note" x="174" y="253" text-anchor="middle">help each other</text>
   <circle class="o-dot" cx="80" cy="262" r="9"/>
   <circle class="o-dot" cx="268" cy="262" r="9"/>
   <circle class="o-dot" cx="174" cy="362" r="9"/>
   <text class="o-title" x="80" y="292" text-anchor="middle">MAKERS</text>
   <text class="o-small" x="80" y="309" text-anchor="middle">make and provide</text>
   <text class="o-title" x="268" y="292" text-anchor="middle">SUPPORTERS</text>
-  <text class="o-small" x="268" y="309" text-anchor="middle">use, pay, fund</text>
+  <text class="o-small" x="268" y="309" text-anchor="middle">use and share</text>
   <text class="o-title" x="174" y="392" text-anchor="middle">MAINTAINERS</text>
-  <text class="o-small" x="174" y="409" text-anchor="middle">help both sides, research,</text>
+  <text class="o-small" x="174" y="409" text-anchor="middle">help people join, keep notes,</text>
   <text class="o-small" x="174" y="426" text-anchor="middle">keep the node on track</text>
 
   <line class="o-link o-thin" x1="174" y1="432" x2="174" y2="452"/>
@@ -62,14 +62,14 @@ updated: 2026-10-02
   <text class="o-small" x="66" y="492">Runs on the node's own hardware.</text>
   <text class="o-small" x="66" y="508">Keeps the record tidy. Never decides.</text>
 </svg>
-<figcaption>Every node has makers, supporters and maintainers, and decides things for itself. Maintainers can use local AI for the paperwork, but people make every decision. Above the nodes, the network body looks after the shared principles, and maintainers send their research back up to it. The reserve is drawn dashed because we haven't decided whether it exists or how it would work.</figcaption>
+<figcaption>Every node has makers, supporters and maintainers, and decides things for itself. Maintainers can use local AI for the paperwork, but people make every decision. Above the nodes, the network body looks after the shared principles, and maintainers send their research back up to it. Shared resources are drawn dashed because we haven't decided whether they exist or how they would work.</figcaption>
 </figure>
 
 ## The idea behind it
 
 Clansurf is a place where people and local tech meet everyday human needs and problems.
 
-It rests on one principle. Everyone should get a chance to create value, instead of having value taken from them. A lot of today's platforms work the other way round: the people doing the work get listed, ranked and charged, and the money ends up somewhere else.
+It rests on one principle. Everyone should get the chance to contribute and help others, and to keep the credit for what they do. A lot of today's platforms work the other way round: the people doing the work get listed and ranked by someone else, and have no say.
 
 Anything that helps people serve each other, do better and be productive can be part of Clansurf. That includes food, groceries, daily essentials, tailoring, carpentry and clothing. It also includes local compute and local AI.
 
@@ -128,7 +128,7 @@ Every node has three kinds of people in it.
 </div>
 <div>
 <dt>Supporters</dt>
-<dd>People who use what makers offer, pay for it or fund it, and help keep the whole thing going.</dd>
+<dd>People who use what makers offer, share it with others and help keep the node going.</dd>
 </div>
 <div>
 <dt>Maintainers</dt>
@@ -148,6 +148,17 @@ Being a maintainer is also a way to learn. The bridge between makers and support
 
 Maintainers answer to their node. They serve for a set time, and the node can vote one out if it isn't working.
 
+### The roles at a glance
+
+<table class="role-table">
+<thead><tr><th>Role</th><th>Who it is</th><th>What they do</th><th>How you become one</th><th>How it ends</th></tr></thead>
+<tbody>
+<tr><td data-label="Role">Maker</td><td data-label="Who it is">Someone who makes or provides what others need.</td><td data-label="What they do">Offers their work, goods or skills to the node.</td><td data-label="How you become one">You ask to join. One maker, one supporter and one maintainer say yes, and the members vote you in.</td><td data-label="How it ends">The same three roles can remove you. You can appeal.</td></tr>
+<tr><td data-label="Role">Supporter</td><td data-label="Who it is">Someone who uses what makers offer.</td><td data-label="What they do">Uses it, shares it with others and helps keep the node going.</td><td data-label="How you become one">The same way as a maker.</td><td data-label="How it ends">The same way as a maker.</td></tr>
+<tr><td data-label="Role">Maintainer</td><td data-label="Who it is">Someone who helps the node work and keep to its principles.</td><td data-label="What they do">Helps people join and get found, keeps notes on what works and what breaks, keeps the node to its principles, and trains the next maintainer.</td><td data-label="How you become one">The same way as a maker. Many start as supporters and help out as apprentices first.</td><td data-label="How it ends">After a set term, or when the node votes you out.</td></tr>
+</tbody>
+</table>
+
 ## How someone joins a node
 
 We want joining to involve all three kinds of people, so no single group controls who gets in.
@@ -155,6 +166,7 @@ We want joining to involve all three kinds of people, so no single group control
 <ol class="steps">
 <li><b>You ask to join</b><span>You say whether you want to be a maker, a supporter or a maintainer.</span></li>
 <li><b>Three people say yes</b><span>At least one maker, one supporter and one maintainer from the node approve.</span></li>
+<li><b>The members vote</b><span>Everyone already in the node gets a say.</span></li>
 <li><b>Everyone else gets a chance to object</b><span>We're thinking 7 days for now.</span></li>
 <li><b>If nobody objects, you're in</b></li>
 </ol>
@@ -169,6 +181,26 @@ If someone needs to be removed, the same three roles decide, and that person can
 ## Each node is independent
 
 Every node makes its own decisions: who joins, who leaves, its own rules and votes, what it offers and to whom. Nobody outside the node can overrule those decisions, and that includes Clansurf.
+
+## When a node goes quiet
+
+A node is active when its record shows something offered, delivered or helped with, or a vote on who joins. Logins and messages don't count, because they're easy to fake.
+
+<table class="role-table">
+<thead><tr><th>When</th><th>What happens</th></tr></thead>
+<tbody>
+<tr><td data-label="When">After 60 days with no activity</td><td data-label="What happens">The node's maintainers are told. The node has 30 days to show activity.</td></tr>
+<tr><td data-label="When">After 90 days</td><td data-label="What happens">The node becomes dormant. Its record stays public, nothing new is added, and its place among the first 25 opens up for a new node.</td></tr>
+<tr><td data-label="When">Any time while dormant</td><td data-label="What happens">One maker, one supporter and one maintainer from the node can wake it up, and the members vote it back.</td></tr>
+<tr><td data-label="When">After 12 months dormant</td><td data-label="What happens">The node is archived. Its record and everyone's credit stay public.</td></tr>
+</tbody>
+</table>
+
+Nothing is deleted. A record nobody can quietly change, and credit people keep, both depend on that.
+
+The same rule applies to people. Someone with no activity for 90 days becomes emeritus: they keep their credit, step back from voting and approving, and can come back when they're active again.
+
+This rule is part of the charter every node agrees to. The node's own record shows when it applies, so nobody outside the node decides it.
 
 ## The network as a whole
 
