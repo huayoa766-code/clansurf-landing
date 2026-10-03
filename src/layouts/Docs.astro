@@ -109,17 +109,23 @@ const pageTitle = entry.id === "index" ? "Clansurf docs" : `${entry.data.nav} ·
       /* A "#" before each section heading. It links to that section, and
          a click also copies the link, so a section can be shared. */
       document.querySelectorAll(".prose h2[id], .prose h3[id]").forEach(function (h) {
+        var label = "Link to this section: " + h.textContent.trim();
         var a = document.createElement("a");
         a.className = "h-link";
+        a.title = "Copy link to this section";
         a.href = "#" + h.id;
         a.textContent = "#";
-        a.setAttribute("aria-label", "Link to this section: " + h.textContent.trim());
+        a.setAttribute("aria-label", label);
         a.addEventListener("click", function () {
           var url = location.href.split("#")[0] + "#" + h.id;
           if (navigator.clipboard) {
             navigator.clipboard.writeText(url).then(function () {
               a.classList.add("copied");
-              setTimeout(function () { a.classList.remove("copied"); }, 1500);
+              a.setAttribute("aria-label", "Link copied");
+              setTimeout(function () {
+                a.classList.remove("copied");
+                a.setAttribute("aria-label", label);
+              }, 1500);
             }, function () {});
           }
         });
@@ -304,12 +310,8 @@ const pageTitle = entry.id === "index" ? "Clansurf docs" : `${entry.data.nav} ·
   .prose h2[id], .prose h3[id] { scroll-margin-top: 24px; }
   .h-link { margin-right: 0.3em; color: var(--ink-3); font-weight: 500; text-decoration: none; }
   .h-link:hover, .h-link:focus-visible { color: var(--green); }
-  .h-link.copied::after {
-    content: "Link copied";
-    margin-left: 0.6em;
-    font-family: var(--display); font-stretch: 125%; font-weight: 600; font-size: 0.68rem;
-    letter-spacing: 0.1em; text-transform: uppercase; color: var(--green); vertical-align: middle;
-  }
+  /* After a copy, the "#" turns green for a moment. No extra text. */
+  .h-link.copied { color: var(--green); }
   .prose h2 + *, .prose h3 + * { margin-top: 0.6em; }
   .prose h2 + * { margin-top: 1em; }
   .prose ul, .prose ol { padding-left: 1.2em; }

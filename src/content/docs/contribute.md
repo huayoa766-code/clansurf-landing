@@ -6,11 +6,11 @@ order: 4
 updated: 2026-10-02
 ---
 
-We're looking for researchers to help shape how Clansurf is designed and developed. You'll explore practical questions about communities, technology, trust, governance and local value creation. Your research may help decide how nodes are started, run and connected across different communities and countries.
+We're looking for researchers to help shape how Clansurf is designed and developed. You'll explore practical questions about communities, technology, trust, governance and how people help each other locally. Your research may help decide how nodes are started, run and connected across different communities and countries.
 
 No degree or formal title is needed. What matters is that you can show where your information comes from.
 
-We announced the call for researchers [on X](https://x.com/JoshuaPoddoku/status/2105889038393913849). If you came from there, welcome.
+We announced the call for research contributors [on X](https://x.com/JoshuaPoddoku/status/2106352755673862383). If you came from there, welcome.
 
 ## What you'd do
 
@@ -38,7 +38,7 @@ Experience with any of these helps:
 - community organising
 - LoRa or mesh networks
 - decentralised technology
-- local economic development
+- local community development
 - field research or interviewing
 - open-source projects
 
@@ -49,7 +49,7 @@ You choose how much time you give, and you can take part remotely, locally or bo
 <ol class="steps">
 <li><b>Have a read</b><span>Start with <a href="/docs/structure/">how Clansurf is organised</a> and the <a href="/docs/research/">open questions</a>.</span></li>
 <li><b>Pick a question</b><span>Or tell us about one we've missed.</span></li>
-<li><b>Write to us</b><span>Tell us your name and a little about yourself, where you're based, your experience or interests, the question you'd like to take, and how much time you expect to give.</span></li>
+<li><b>Write to us</b><span>Three lines is enough: where you are, what you know about, and a question you'd like to take, or "not sure yet".</span></li>
 </ol>
 
 <a class="email" href="#doc" data-u="hcraeser" data-d="moc.frusnalc">research<span>[at]</span>clansurf<span>[dot]</span>com</a>
@@ -79,4 +79,4 @@ Recognition depends on what you contributed and how good it is. We'll always tal
 
 Research is the starting point. As Clansurf develops, researchers may get the chance to become maintainers, start a node in their own community, and build it with the people who live there.
 
-These roles aren't guaranteed yet. Your research will help shape how they work.
+**Early access.** Contributors are the first we invite to help start one of the [first 25 nodes](/join/). Your research will help shape how they work.

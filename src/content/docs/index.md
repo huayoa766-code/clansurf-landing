@@ -12,7 +12,7 @@ Clansurf began with a simple observation. Most streets already have someone who 
 
 Since then the idea has grown. It isn't only about streets now. It's about people and the tech they own coming together to meet everyday needs, like food, clothing, repairs or computing, wherever those people are.
 
-We're working out how all of this should be organised, and we're doing it in the open. These docs are where we write it down.
+We're deciding how all of this should be organised, and we're doing it in the open. These docs are where we write it down.
 
 ## Who these pages are for
 
@@ -34,7 +34,7 @@ Everything else is still open, and the [open questions](/docs/research/) page li
 ## What's here
 
 - **[How Clansurf is organised](/docs/structure/)** covers the three roles, the two kinds of node, how someone joins, and what the network body does.
-- **[Open questions](/docs/research/)** lists what we haven't worked out yet, with a note on each about where to look.
+- **[Open questions](/docs/research/)** lists what we haven't decided yet, with a note on each about where to look.
 - **[How to contribute](/docs/contribute/)** is the practical part: writing to us, and sending your work back.
 - **[Help start one of the first 25 nodes](/join/)** if you would rather take part in a node than research one.
 

@@ -1,7 +1,7 @@
 ---
 title: Open questions
 nav: Open questions
-description: The things we haven't worked out yet. If one of them interests you, this is where you can help.
+description: The things we haven't decided yet. If one of them interests you, this is where you can help.
 order: 3
 updated: 2026-10-02
 ---
