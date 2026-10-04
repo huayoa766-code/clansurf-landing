@@ -30,7 +30,7 @@ updated: 2026-10-02
   </g>
   <text class="o-note" x="72" y="122">principles</text>
   <text class="o-note" x="176" y="122">research</text>
-  <text class="o-note" x="304" y="122">undecided</text>
+  <text class="o-note" x="302" y="122" style="font-size: 11px">undecided</text>
 
   <rect class="o-back" x="20" y="162" width="332" height="384"/>
   <rect class="o-back" x="14" y="156" width="332" height="384"/>

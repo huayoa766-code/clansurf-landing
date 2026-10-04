@@ -164,7 +164,7 @@ const pageTitle = entry.id === "index" ? "Clansurf docs" : `${entry.data.nav} ·
     --wash-rule: #c6d9cb;
     --pave: #c9ccd2;
     --display: "Archivo", "Arial Narrow", Arial, sans-serif;
-    --serif: "Alegreya", Georgia, serif;
+    --body: "Atkinson Hyperlegible Next", system-ui, sans-serif;
     --gutter: clamp(16px, 4vw, 56px);
     --col-gap: clamp(12px, 2vw, 32px);
     color-scheme: light;
@@ -207,7 +207,7 @@ const pageTitle = entry.id === "index" ? "Clansurf docs" : `${entry.data.nav} ·
     margin: 0;
     background: var(--paper);
     color: var(--ink);
-    font-family: var(--serif);
+    font-family: var(--body);
     font-size: 1.1875rem;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -379,8 +379,8 @@ const pageTitle = entry.id === "index" ? "Clansurf docs" : `${entry.data.nav} ·
   .overview .o-thin { stroke-width: 1.5; }
   .overview .o-dot { fill: var(--green); }
   .overview .o-title { fill: var(--ink); font-family: var(--display); font-stretch: 110%; font-weight: 700; font-size: 12.5px; letter-spacing: 0.06em; }
-  .overview .o-small { fill: var(--ink-2); font-family: var(--serif); font-size: 13.5px; }
-  .overview .o-note { fill: var(--ink-3); font-family: var(--serif); font-style: italic; font-size: 13px; }
+  .overview .o-small { fill: var(--ink-2); font-family: var(--body); font-size: 13.5px; }
+  .overview .o-note { fill: var(--ink-3); font-family: var(--body); font-style: italic; font-size: 13px; }
   .overview figcaption { margin-top: 12px; color: var(--ink-2); font-size: 1rem; max-width: 34em; }
 
   /* place node vs reach node: two panels, side by side when there's room */
