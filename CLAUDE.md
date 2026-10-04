@@ -30,6 +30,25 @@ npm run build
 node scripts/hemingway.mjs   # fix or justify each flag
 ```
 
+## Every design change: Impeccable
+
+**Every design change passes Impeccable's checker (4 Oct 2026).** Run it on
+the built pages, served locally, at desktop and phone width:
+
+```
+IMPECCABLE_BROWSER=<path to Chromium> npx impeccable@4.1.0 detect --viewport 1280x800 <urls>
+IMPECCABLE_BROWSER=<path to Chromium> npx impeccable@4.1.0 detect --viewport 390x844 <urls>
+```
+
+Our rules win where they clash. `.impeccable/config.json` switches off four
+rules for that reason: shape-assembled-illustration (the pixel art and
+diagrams are drawn that way on purpose), oversized-h1 (big headlines are the
+brief), kicker-above-heading (small labels hang in the margin) and
+numbered-section-labels. Fix every other finding or give the reason. Known
+false alarms in 4.1.0: line-length (it measures the box, not the rendered
+lines; check the rendered lines instead) and tight-leading on display
+headings.
+
 ## What the copy must keep (decided 3 to 4 Oct 2026)
 
 - Clansurf helps a community run itself as a node. A node is a group of

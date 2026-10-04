@@ -19,6 +19,8 @@ When you send us something, it helps if you can tell us:
 
 <section class="q">
 
+## The questions
+
 ### How does the very first node start?
 
 Joining needs a maker, a supporter and a maintainer to say yes, and then a vote of the members. But on day one, a new node has none of them. Someone has to start it, maybe the network body or a founding maintainer, and that needs a clear written rule.

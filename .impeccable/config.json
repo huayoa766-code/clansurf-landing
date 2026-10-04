@@ -1,0 +1,10 @@
+{
+  "detector": {
+    "ignoreRules": [
+      "shape-assembled-illustration",
+      "oversized-h1",
+      "kicker-above-heading",
+      "numbered-section-labels"
+    ]
+  }
+}
