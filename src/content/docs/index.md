@@ -6,7 +6,7 @@ order: 1
 updated: 2026-10-02
 ---
 
-Clansurf helps a group of people make their node productive. People help each other and contribute in their own way, and the node's own rules stop anyone from abusing it.
+Clansurf helps a community run itself as a node. People help each other and contribute in their own way, and the node's own rules stop anyone from abusing it.
 
 Clansurf began with a simple observation. Most streets already have someone who sells milk, someone who sells eggs, a tailor, a carpenter. People nearby often don't know they're there, and they shouldn't need an app with a server in another country to find them. The [street use case](/use-cases/street/) and the [working paper](https://paper.clansurf.com/) cover that first idea. A small group on one street uses radios it owns, and keeps working when the internet doesn't.
 
