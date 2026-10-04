@@ -40,4 +40,4 @@ Everything else is still open, and the [open questions](/docs/research/) page li
 
 ## How this fits with the paper
 
-The working paper is long. It makes the case for nodes on a street and backs it up: the radio rules country by country, how the records work without internet, what happens in a blackout. These docs are shorter, and they'll change more often. When something here is well researched, it can go into the next version of the paper.
+The working paper is long. It makes the case for nodes on a street. It covers the radio rules in each country, how the records work without internet, and what happens in a blackout. These docs are shorter, and they'll change more often. When we've researched something well here, it can go into the next version of the paper.

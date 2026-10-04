@@ -199,7 +199,7 @@ A node is active when its record shows something offered, delivered or helped wi
 
 Nothing is deleted. A record nobody can quietly change, and credit people keep, both depend on that.
 
-The same rule applies to people. Someone with no activity for 90 days becomes emeritus: they keep their credit, step back from voting and approving, and can come back when they're active again.
+The same rule applies to people. Someone with no activity for 90 days becomes emeritus. They keep their credit, step back from voting and approving, and can come back when they're active again.
 
 This rule is part of the charter every node agrees to. The node's own record shows when it applies, so nobody outside the node decides it.
 
@@ -207,7 +207,7 @@ This rule is part of the charter every node agrees to. The node's own record sho
 
 When there are many nodes, something has to keep the whole system alive. So all the nodes together will have a body, something like a board or a council. Its job is to:
 
-- keep the founding principles (we call them the charter) that every node is built on, so nodes don't drift off track;
+- keep the founding principles (we call them the charter) that every node rests on, so nodes don't drift off track;
 - look after what all the nodes share: the tools, the research, the paper;
 - look after the Clansurf name.
 

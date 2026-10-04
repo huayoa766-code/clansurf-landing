@@ -30,7 +30,7 @@ Joining needs a maker, a supporter and a maintainer to say yes, and then a vote 
 
 ### Who sits on the network body?
 
-We see two options. Each node could send one of its maintainers, so its own members run the network. Or people could be appointed. We'd like to know what happens in practice.
+We see two options. Each node could send one of its maintainers, so its own members run the network. Or the network could appoint people. We'd like to know what happens in practice.
 
 <p class="ask">How do federations and networks fill their boards? What happened when a board stopped listening to its members?</p>
 </section>
@@ -39,9 +39,9 @@ We see two options. Each node could send one of its maintainers, so its own memb
 
 ### What should the founding principles say?
 
-Every node is meant to be built on the same founding principles, the charter. We haven't written them yet.
+Every node should rest on the same founding principles, the charter. We haven't written them yet.
 
-<p class="ask">Founding principles that groups actually followed for years, ones that were quietly ignored, and what made the difference.</p>
+<p class="ask">Founding principles that groups actually followed for years, ones that groups quietly ignored, and what made the difference.</p>
 </section>
 
 <section class="q">
@@ -57,7 +57,7 @@ Should each node get one vote, or each person? A big node and a small node would
 
 ### How long should people have to object?
 
-When someone asks to join, the rest of the node gets time to object. We've said 7 days for now. That might be too short in places where people are offline for days at a time, and it might need to be different for each role.
+When someone asks to join, the rest of the node gets time to object. We've said 7 days for now. That might be too short where people go offline for days. It might also need to differ for each role.
 
 <p class="ask">How do groups that rarely meet, or that span time zones, make sure everyone gets a fair chance to speak up?</p>
 </section>
@@ -75,7 +75,7 @@ We know maintainers should serve for a set time and that the node can vote one o
 
 ### Who hears an appeal?
 
-If someone is removed from a node, they can appeal. But to whom? The node itself, a neighbouring node, or the network body?
+Anyone removed from a node can appeal. But to whom? The node itself, a neighbouring node, or the network body?
 
 <p class="ask">How small self-run groups handle appeals, and which ways people actually trusted.</p>
 </section>
