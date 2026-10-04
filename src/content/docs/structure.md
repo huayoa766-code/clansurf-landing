@@ -69,7 +69,7 @@ updated: 2026-10-02
 
 Clansurf is a place where people and local tech meet everyday human needs and problems.
 
-It rests on one principle. Everyone should get the chance to contribute and help others, and to keep the credit for what they do. A lot of today's platforms work the other way round: the people doing the work get listed and ranked by someone else, and have no say.
+It rests on one principle. Everyone should get the chance to contribute and help others, and to keep the credit for what they do. A lot of today's platforms work the other way round: someone else lists and ranks the people doing the work, and they have no say.
 
 Anything that helps people serve each other, do better and be productive can be part of Clansurf. That includes food, groceries, daily essentials, tailoring, carpentry and clothing. It also includes local compute and local AI.
 
@@ -176,7 +176,7 @@ Two extra rules keep it fair:
 - The three people who approve you can't be your relatives.
 - A maker shouldn't approve someone in their own trade. Otherwise the egg seller could keep out a second egg seller just to avoid competition.
 
-If someone needs to be removed, the same three roles decide, and that person can appeal.
+To remove someone, the same three roles decide, and that person can appeal.
 
 ## Each node is independent
 

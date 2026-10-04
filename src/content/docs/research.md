@@ -30,7 +30,7 @@ Joining needs a maker, a supporter and a maintainer to say yes, and then a vote 
 
 ### Who sits on the network body?
 
-We see two options. Each node could send one of its maintainers, so the network is run by its own members. Or people could be appointed. We'd like to know what happens in practice.
+We see two options. Each node could send one of its maintainers, so its own members run the network. Or people could be appointed. We'd like to know what happens in practice.
 
 <p class="ask">How do federations and networks fill their boards? What happened when a board stopped listening to its members?</p>
 </section>

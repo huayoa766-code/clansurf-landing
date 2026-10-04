@@ -8,11 +8,11 @@ updated: 2026-10-02
 
 Clansurf helps a group of people make their node productive. People help each other and contribute in their own way, and the node's own rules stop anyone from abusing it.
 
-Clansurf began with a simple observation. Most streets already have someone who sells milk, someone who sells eggs, a tailor, a carpenter. People nearby often don't know they're there, and an app with a server in another country shouldn't be needed to find them. The [street use case](/use-cases/street/) and the [working paper](https://paper.clansurf.com/) are about that first idea: a small group on one street, using radios they own, that keeps working even when the internet doesn't.
+Clansurf began with a simple observation. Most streets already have someone who sells milk, someone who sells eggs, a tailor, a carpenter. People nearby often don't know they're there, and they shouldn't need an app with a server in another country to find them. The [street use case](/use-cases/street/) and the [working paper](https://paper.clansurf.com/) cover that first idea. A small group on one street uses radios it owns, and keeps working when the internet doesn't.
 
 Since then the idea has grown. It isn't only about streets now. It's about people and the tech they own coming together to meet everyday needs, like food, clothing, repairs or computing, wherever those people are.
 
-We're deciding how all of this should be organised, and we're doing it in the open. These docs are where we write it down.
+We're deciding how to organise all of this, and we're doing it in the open. These docs are where we write it down.
 
 ## Who these pages are for
 

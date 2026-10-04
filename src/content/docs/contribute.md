@@ -6,7 +6,7 @@ order: 4
 updated: 2026-10-02
 ---
 
-We're looking for researchers to help shape how Clansurf is designed and developed. You'll explore practical questions about communities, technology, trust, governance and how people help each other locally. Your research may help decide how nodes are started, run and connected across different communities and countries.
+We're looking for researchers to help shape how we design and build Clansurf. You'll explore practical questions about communities, technology, trust, governance and how people help each other locally. Your research may help decide how people start, run and connect nodes across different communities and countries.
 
 No degree or formal title is needed. What matters is that you can show where your information comes from.
 
@@ -71,12 +71,12 @@ We read what you send. If it holds up, it changes these pages, and it may go int
 
 ## Being credited
 
-Contributors can get a named record of their contribution to Clansurf. With your permission, your name, what you contributed, your research topic and relevant links can be acknowledged in the docs, project records, publications or other official Clansurf channels.
+Contributors can get a named record of their contribution to Clansurf. With your permission, we credit you by name in our docs and the working paper, with your topic, what you did and your links.
 
-Recognition depends on what you contributed and how good it is. We'll always talk it through with you, and nothing about you is published until you've approved it.
+Recognition depends on what you contributed and how good it is. We'll always talk it through with you, and we publish nothing about you until you've approved it.
 
 ## Where this can go
 
-Research is the starting point. As Clansurf develops, researchers may get the chance to become maintainers, start a node in their own community, and build it with the people who live there.
+Research is the starting point. As Clansurf grows, researchers may become maintainers, start a node in their own community and build it with the people there.
 
 **Early access.** Contributors are the first we invite to help start one of the [first 25 nodes](/join/). Your research will help shape how they work.
