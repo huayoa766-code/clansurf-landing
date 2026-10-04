@@ -8,7 +8,7 @@ updated: 2026-10-02
 
 We're looking for researchers to help shape how we design and build Clansurf. You'll explore practical questions about communities, technology, trust, governance and how people help each other locally. Your research may help decide how people start, run and connect nodes across different communities and countries.
 
-No degree or formal title is needed. What matters is that you can show where your information comes from.
+You don't need a degree or a formal title. What matters is that you can show where your information comes from.
 
 We announced the call for research contributors [on X](https://x.com/JoshuaPoddoku/status/2106352755673862383). If you came from there, welcome.
 
@@ -47,7 +47,7 @@ You choose how much time you give, and you can take part remotely, locally or bo
 ## Getting started
 
 <ol class="steps">
-<li><b>Have a read</b><span>Start with <a href="/docs/structure/">how Clansurf is organised</a> and the <a href="/docs/research/">open questions</a>.</span></li>
+<li><b>Have a read</b><span>Start with <a href="/docs/structure/">how Clansurf works</a> and the <a href="/docs/research/">open questions</a>.</span></li>
 <li><b>Pick a question</b><span>Or tell us about one we've missed.</span></li>
 <li><b>Write to us</b><span>Three lines is enough: where you are, what you know about, and a question you'd like to take, or "not sure yet".</span></li>
 </ol>

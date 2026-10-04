@@ -13,13 +13,13 @@ The most useful help is usually evidence from groups that already exist. Co-oper
 When you send us something, it helps if you can tell us:
 
 - where it comes from (a link, a book, a person you spoke to);
-- where it happened, and roughly how many people were involved;
+- where it happened, and roughly how many people took part;
 - what went wrong, not just what worked;
 - what you couldn't find out.
 
 <section class="q">
 
-### How does the very first node get started?
+### How does the very first node start?
 
 Joining needs a maker, a supporter and a maintainer to say yes, and then a vote of the members. But on day one, a new node has none of them. Someone has to start it, maybe the network body or a founding maintainer, and that needs a clear written rule.
 
@@ -46,7 +46,7 @@ Every node should rest on the same founding principles, the charter. We haven't 
 
 <section class="q">
 
-### How should votes across the whole network be counted?
+### How should the whole network count votes?
 
 Should each node get one vote, or each person? A big node and a small node would feel very differently about that.
 
@@ -100,7 +100,7 @@ A node will share things: tools, space, hardware. Everyone should be able to see
 
 <section class="q">
 
-### What else could Clansurf be used for?
+### What else could people use Clansurf for?
 
 So far we've written up one use case, a single street. We think there are more, like people sharing computing they own. We'd like to find them from real needs, not guess them.
 

@@ -1,6 +1,6 @@
 ---
-title: How Clansurf is organised
-nav: How it's organised
+title: How Clansurf works
+nav: How it works
 description: Who takes part, what a node is, how someone joins, and what the network as a whole looks after. This is our current thinking, and it will change.
 order: 2
 updated: 2026-10-02
@@ -63,7 +63,7 @@ updated: 2026-10-02
   <text class="o-small" x="66" y="492">Runs on the node's own hardware.</text>
   <text class="o-small" x="66" y="508">Keeps the record tidy. Never decides.</text>
 </svg>
-<figcaption>Every node has makers, supporters and maintainers, and decides things for itself. Maintainers can use local AI for the paperwork, but people make every decision. Above the nodes, the network body looks after the shared principles, and maintainers send their research back up to it. Shared resources are drawn dashed because we haven't decided whether they exist or how they would work. Local AI is dashed too, because it's still an experiment.</figcaption>
+<figcaption>Every node has makers, supporters and maintainers, and decides things for itself. Maintainers can use local AI for the paperwork, but people make every decision. Above the nodes, the network body looks after the shared principles, and maintainers send their research back up to it. We drew shared resources dashed because we haven't decided whether they exist or how they would work. We drew local AI dashed too, because it's still an experiment.</figcaption>
 </figure>
 
 ## The idea behind it
@@ -136,7 +136,7 @@ Every node has three kinds of people in it.
 <dd>People who make sure the node actually works, and that it stays true to the idea. In practice that means they:
 <ul>
 <li>take part in research, writing down what works and what breaks and sharing it with the rest of the network;</li>
-<li>help makers join, get set up and get found;</li>
+<li>help makers join, set up and become easy to find;</li>
 <li>help supporters find makers and use what's on offer;</li>
 <li>notice when a decision drifts away from the shared principles, and say so;</li>
 <li>train the next maintainer, so the node never depends on one person.</li>
@@ -156,7 +156,7 @@ Maintainers answer to their node. They serve for a set time, and the node can vo
 <tbody>
 <tr><td data-label="Role">Maker</td><td data-label="Who it is">Someone who makes or provides what others need.</td><td data-label="What they do">Offers their work, goods or skills to the node.</td><td data-label="How you become one">You ask to join. One maker, one supporter and one maintainer say yes, and the members vote you in.</td><td data-label="How it ends">The same three roles can remove you. You can appeal.</td></tr>
 <tr><td data-label="Role">Supporter</td><td data-label="Who it is">Someone who uses what makers offer.</td><td data-label="What they do">Uses it, shares it with others and helps keep the node going.</td><td data-label="How you become one">The same way as a maker.</td><td data-label="How it ends">The same way as a maker.</td></tr>
-<tr><td data-label="Role">Maintainer</td><td data-label="Who it is">Someone who helps the node work and keep to its principles.</td><td data-label="What they do">Helps people join and get found, keeps notes on what works and what breaks, keeps the node to its principles, and trains the next maintainer.</td><td data-label="How you become one">The same way as a maker. Many start as supporters and help out as apprentices first.</td><td data-label="How it ends">After a set term, or when the node votes you out.</td></tr>
+<tr><td data-label="Role">Maintainer</td><td data-label="Who it is">Someone who helps the node work and keep to its principles.</td><td data-label="What they do">Helps people join, keeps notes on what works, keeps the node to its principles and trains the next maintainer.</td><td data-label="How you become one">The same way as a maker. Many start as supporters and help out as apprentices first.</td><td data-label="How it ends">After a set term, or when the node votes you out.</td></tr>
 </tbody>
 </table>
 
@@ -190,14 +190,14 @@ A node is active when its record shows something offered, delivered or helped wi
 <table class="role-table">
 <thead><tr><th>When</th><th>What happens</th></tr></thead>
 <tbody>
-<tr><td data-label="When">After 60 days with no activity</td><td data-label="What happens">The node's maintainers are told. The node has 30 days to show activity.</td></tr>
-<tr><td data-label="When">After 90 days</td><td data-label="What happens">The node becomes dormant. Its record stays public, nothing new is added, and its place among the first 25 opens up for a new node.</td></tr>
+<tr><td data-label="When">After 60 days with no activity</td><td data-label="What happens">The node's maintainers get a warning. The node has 30 days to show activity.</td></tr>
+<tr><td data-label="When">After 90 days</td><td data-label="What happens">The node becomes dormant. Its record stays public but takes nothing new, and its place among the first 25 opens up for a new node.</td></tr>
 <tr><td data-label="When">Any time while dormant</td><td data-label="What happens">One maker, one supporter and one maintainer from the node can wake it up, and the members vote it back.</td></tr>
-<tr><td data-label="When">After 12 months dormant</td><td data-label="What happens">The node is archived. Its record and everyone's credit stay public.</td></tr>
+<tr><td data-label="When">After 12 months dormant</td><td data-label="What happens">The node closes for good. Its record and everyone's credit stay public.</td></tr>
 </tbody>
 </table>
 
-Nothing is deleted. A record nobody can quietly change, and credit people keep, both depend on that.
+We delete nothing. A record nobody can quietly change, and credit people keep, both depend on that.
 
 The same rule applies to people. Someone with no activity for 90 days becomes emeritus. They keep their credit, step back from voting and approving, and can come back when they're active again.
 

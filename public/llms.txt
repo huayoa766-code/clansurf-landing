@@ -28,7 +28,7 @@ Makers, supporters and maintainers to start the first 25 nodes, anywhere in the 
 ## Docs for contributors
 Drafts, updated as research comes in.
 - Start here: https://www.clansurf.com/docs/
-- How Clansurf is organised: https://www.clansurf.com/docs/structure/
+- How Clansurf works: https://www.clansurf.com/docs/structure/
 - Open questions: https://www.clansurf.com/docs/research/
 - How to contribute: https://www.clansurf.com/docs/contribute/
 

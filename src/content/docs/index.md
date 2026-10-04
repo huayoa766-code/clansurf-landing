@@ -20,7 +20,7 @@ They're for contributors, wherever you live. You might know about co-operatives,
 
 ## Please read this as a draft
 
-None of this is finished. We'd rather share our thinking early and get it wrong in public than polish it alone. Each page shows the date it last changed.
+We haven't finished any of this. We'd rather share our thinking early and get it wrong in public than polish it alone. Each page shows the date it last changed.
 
 Some things we're fairly sure about:
 
@@ -33,7 +33,7 @@ Everything else is still open, and the [open questions](/docs/research/) page li
 
 ## What's here
 
-- **[How Clansurf is organised](/docs/structure/)** covers the three roles, the two kinds of node, how someone joins, and what the network body does.
+- **[How Clansurf works](/docs/structure/)** covers the three roles, the two kinds of node, how someone joins, and what the network body does.
 - **[Open questions](/docs/research/)** lists what we haven't decided yet, with a note on each about where to look.
 - **[How to contribute](/docs/contribute/)** is the practical part: writing to us, and sending your work back.
 - **[Help start one of the first 25 nodes](/join/)** if you would rather take part in a node than research one.
