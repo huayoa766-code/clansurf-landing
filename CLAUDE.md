@@ -3,8 +3,8 @@
 clansurf.com. The home page and use cases are plain HTML in `public/`;
 the docs are Markdown in `src/content/docs/`, built by Astro.
 Fonts are served from the site (`public/fonts.css`): Archivo for headings
-and labels, Atkinson Hyperlegible Next for body text (since 4 Oct 2026,
-chosen for second-language and low-vision readers). Inter is banned.
+and labels, Noto Sans for body text (since 4 Oct 2026, wide
+language coverage for a worldwide audience). Inter is banned.
 
 ## Every copy change: the Hemingway check
 

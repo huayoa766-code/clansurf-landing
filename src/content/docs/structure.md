@@ -61,7 +61,7 @@ updated: 2026-10-02
   <text class="o-title" x="66" y="474">LOCAL AI</text>
   <text class="o-note" x="284" y="474" text-anchor="end">experimental</text>
   <text class="o-small" x="66" y="492">Runs on the node's own hardware.</text>
-  <text class="o-small" x="66" y="508">Keeps the record tidy. Never decides.</text>
+  <text class="o-small" x="66" y="508">Tidies the record. Never decides.</text>
 </svg>
 <figcaption>Every node has makers, supporters and maintainers, and decides things for itself. Maintainers can use local AI for the paperwork, but people make every decision. Above the nodes, the network body looks after the shared principles, and maintainers send their research back up to it. We drew shared resources dashed because we haven't decided whether they exist or how they would work. We drew local AI dashed too, because it's still an experiment.</figcaption>
 </figure>
