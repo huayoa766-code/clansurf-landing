@@ -5,9 +5,10 @@ the docs are Markdown in `src/content/docs/`, built by Astro.
 Fonts are served from the site (`public/fonts.css`): Archivo for headings
 and labels, Noto Sans for body text (since 4 Oct 2026, wide
 language coverage for a worldwide audience). Inter is banned.
-The interface is a pixel game UI (4 Oct 2026): square corners, thick ink
-borders, hard drop shadows, in `public/pixel-ui.css`, linked last on every
-page and in the docs layout.
+The interface follows the Swiss grid with the pixel art as its images
+(4 Oct 2026): heavy rules open sections, the grid shows as cell lines,
+light Archivo headlines, nothing rounded or shadowed. It lives in
+`public/swiss.css`, linked last on every page and in the docs layout.
 
 ## Every copy change: the Hemingway check
 
@@ -49,8 +50,8 @@ IMPECCABLE_BROWSER=<path to Chromium> npx impeccable@4.1.0 detect --viewport 390
 Our rules win where they clash. `.impeccable/config.json` switches off four
 rules for that reason: shape-assembled-illustration (the pixel art and
 diagrams are drawn that way on purpose), oversized-h1 (big headlines are the
-brief), kicker-above-heading (small labels hang in the margin) and
-numbered-section-labels. Fix every other finding or give the reason. Known
+brief), kicker-above-heading and hero-eyebrow-chip (small labels hang in the
+margin) and numbered-section-labels. Fix every other finding or give the reason. Known
 false alarms in 4.1.0: line-length (it measures the box, not the rendered
 lines; check the rendered lines instead) and tight-leading on display
 headings.

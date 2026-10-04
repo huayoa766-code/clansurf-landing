@@ -1,0 +1,104 @@
+/* Swiss grid with pixel art (4 Oct 2026). Clansurf keeps its pixel-art
+   streets as its images, but the interface follows the Swiss grid, like
+   huyoworld.com: heavy rules open sections, the grid shows as cell lines,
+   labels hang in small uppercase, nothing is rounded or shadowed.
+   Replaces the pixel game UI (borders and drop shadows) from the same day.
+   Loaded after each page's own styles. */
+
+:root { --sw-rule: 4px; }
+
+/* ---- Header: a heavy rule and a small uppercase menu -------------------- */
+.top { border-bottom: var(--sw-rule) solid var(--ink); }
+.top nav a {
+  font-family: var(--display);
+  font-stretch: 125%;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.top nav a:hover { color: var(--accent); }
+
+/* ---- Sections open on a heavy full-width rule --------------------------- */
+.local, .usecase, .next, .contact, .detour, .compare, .faq, .roles,
+.terms-band {
+  border-top: var(--sw-rule) solid var(--ink);
+}
+/* The coloured bands need no rule: the change of colour is the edge. */
+
+/* Labels: the index in the margin, set in ink. */
+.label { color: var(--ink); font-weight: 700; }
+.band .label { color: var(--band-accent); }
+
+/* ---- The fact strip: four visible cells under a heavy rule -------------- */
+.facts { border-top: var(--sw-rule) solid var(--ink) !important; border-bottom: 1px solid var(--ink); }
+@media (min-width: 900px) {
+  .facts { column-gap: 0 !important; }
+  .facts > div { border-top: 0 !important; padding: 12px 16px 14px !important; }
+  .facts > div + div { border-left: 1px solid var(--ink); }
+  .facts > div:first-child { padding-left: 0 !important; }
+}
+
+/* ---- Ruled blocks: a heavy rule on top, hairlines between --------------- */
+.reasons, .split, .table-wrap, .faq-list, .layers, .verbs, .routes,
+.deal, .privacy, #join, nav.toc, .prose table, .review-list {
+  border-top: var(--sw-rule) solid var(--ink) !important;
+}
+
+/* Inside the dark band the heavy rules turn light, or they vanish. */
+.band .layers, .band .reasons, .band .split, .band .routes, .band .verbs {
+  border-top-color: var(--band-ink) !important;
+}
+
+/* ---- Buttons: square and flat ------------------------------------------ */
+.btn {
+  border-radius: 0 !important;
+  font-family: var(--display);
+  font-stretch: 110%;
+  letter-spacing: 0.02em;
+}
+.back { border-radius: 0; }
+
+/* The docs' "Next" link: a heavy rule above, no box. */
+a.next { border-top: var(--sw-rule) solid var(--ink) !important; }
+
+/* ---- Form fields: square ----------------------------------------------- */
+input[type="text"], input[type="email"], textarea { border-radius: 0 !important; }
+
+/* ---- Footer: a heavy rule ----------------------------- */
+.foot { border-top: var(--sw-rule) solid var(--ink); }
+
+/* Keyboard focus: a square, solid outline. */
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 0; }
+
+/* ---- Headlines in light, normal-width Archivo (4 Oct 2026), the same
+   voice as huyoworld.com, in place of the heavy condensed cut. Small
+   labels and pixel-art text keep their own settings. -------------------- */
+.hero h1,
+.apply h1,
+.title,
+.doc h1,
+.prose h2,
+.prose h3,
+.layers h3,
+.next-a h3,
+.next-b h3,
+.verbs dt,
+.reasons b,
+.split .you dd,
+.next-t,
+.big-n,
+.email {
+  font-weight: 380 !important;
+  font-stretch: 100% !important;
+  letter-spacing: -0.035em !important;
+}
+.hero h1 em,
+.apply h1 em,
+.title em { font-weight: 450 !important; }
+.hero h1,
+.apply h1,
+.title,
+.doc h1 { line-height: 1 !important; }
+.big-n { letter-spacing: -0.05em !important; }
