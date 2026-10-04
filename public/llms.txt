@@ -1,6 +1,6 @@
 # Clansurf: where people and local tech meet everyday human needs
 
-> Clansurf helps a community run itself as a node. People help each other and contribute in their own way, and the node's own rules stop anyone from abusing it. It works with tech they own themselves, for everyday needs: food, clothing, repairs, computing. It rests on one idea: everyone should get the chance to contribute and help others, and to keep the credit for what they do.
+> Clansurf helps a community run itself as a node. A node is a group of people who help each other and make their own rules. Everyone contributes in their own way, and the rules stop anyone from abusing it. It works with tech people own themselves, for everyday needs: food, clothing, repairs, computing. It rests on one idea: everyone should get the chance to contribute and help others, and to keep the credit for what they do.
 
 Research from HuyoWorld (https://www.huyoworld.com/).
 
