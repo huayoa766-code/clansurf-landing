@@ -102,3 +102,21 @@ input[type="text"], input[type="email"], textarea { border-radius: 0 !important;
 .title,
 .doc h1 { line-height: 1 !important; }
 .big-n { letter-spacing: -0.05em !important; }
+
+/* The wordmark beside the logo in Noto Sans, at its old size and weight,
+   in the logo's violet (#45507f) (4 Oct 2026, Joshua's ask). */
+.brand span {
+  font-family: var(--body);
+  font-weight: 700;
+  font-stretch: 100%;
+  letter-spacing: -0.01em;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--accent);
+}
+@media (max-width: 479px) {
+  .top nav a { white-space: nowrap; }
+  /* On a phone the docs header keeps Docs and Work with us, as the home
+     page keeps its two. */
+  .top nav a.drop-narrow { display: none; }
+}
