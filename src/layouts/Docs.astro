@@ -1,5 +1,6 @@
 ---
 import { getCollection, type CollectionEntry } from "astro:content";
+import { execFileSync } from "node:child_process";
 
 interface Props {
   entry: CollectionEntry<"docs">;
@@ -12,7 +13,20 @@ const href = (e: CollectionEntry<"docs">) => (e.id === "index" ? "/docs/" : `/do
 const at = pages.findIndex(p => p.id === entry.id);
 const next = pages[at + 1];
 const canonical = new URL(href(entry), Astro.site).href;
-const date = updated.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+// "Last changed" is the later of the page's own date and its last commit,
+// so editing a page updates the date without anyone touching it. If git
+// can't answer (a shallow clone on the build server), the page's date stands.
+const lastCommit = (() => {
+  if (!entry.filePath) return undefined;
+  try {
+    const out = execFileSync("git", ["log", "-1", "--format=%cI", "--", entry.filePath], { encoding: "utf8" }).trim();
+    return out ? new Date(out) : undefined;
+  } catch {
+    return undefined;
+  }
+})();
+const changed = lastCommit && lastCommit > updated ? lastCommit : updated;
+const date = changed.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 const pageTitle = entry.id === "index" ? "Clansurf docs" : `${entry.data.nav} · Clansurf docs`;
 ---
 
