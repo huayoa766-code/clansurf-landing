@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from "astro:content";
 import { execFileSync } from "node:child_process";
+import { existsSync } from "node:fs";
 
 interface Props {
   entry: CollectionEntry<"docs">;
@@ -28,6 +29,11 @@ const lastCommit = (() => {
 const changed = lastCommit && lastCommit > updated ? lastCommit : updated;
 const date = changed.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 const pageTitle = entry.id === "index" ? "Clansurf docs" : `${entry.data.nav} · Clansurf docs`;
+// Each page's card is drawn by scripts/og-cards.cjs. A new page without one
+// yet falls back to the home card.
+const cardFile = `og/docs-${entry.id}.png`;
+const card = new URL(existsSync(`public/${cardFile}`) ? `/${cardFile}?v=1` : "/og/home.png?v=1", Astro.site).href;
+const cardAlt = `Clansurf docs: ${title}. A pixel-art street of stalls and neighbours, with a radio on the tallest roof.`;
 ---
 
 <!doctype html>
@@ -44,8 +50,15 @@ const pageTitle = entry.id === "index" ? "Clansurf docs" : `${entry.data.nav} ·
     <meta property="og:url" content={canonical} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="https://www.clansurf.com/og-home.png?v=1" />
+    <meta property="og:image" content={card} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={cardAlt} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={card} />
+    <meta name="twitter:image:alt" content={cardAlt} />
     <meta name="theme-color" content="#f5f6f7" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#11152a" media="(prefers-color-scheme: dark)" />
     <link rel="icon" href="/logo.svg?v=1" type="image/svg+xml" />
