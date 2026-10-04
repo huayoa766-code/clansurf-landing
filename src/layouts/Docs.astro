@@ -13,7 +13,7 @@ const href = (e: CollectionEntry<"docs">) => (e.id === "index" ? "/docs/" : `/do
 const at = pages.findIndex(p => p.id === entry.id);
 const next = pages[at + 1];
 const canonical = new URL(href(entry), Astro.site).href;
-// "Last changed" is the later of the page's own date and its last commit,
+// "Last updated" is the later of the page's own date and its last commit,
 // so editing a page updates the date without anyone touching it. If git
 // can't answer (a shallow clone on the build server), the page's date stands.
 const lastCommit = (() => {
@@ -81,7 +81,7 @@ const pageTitle = entry.id === "index" ? "Clansurf docs" : `${entry.data.nav} ·
             ))
           }
         </ol>
-        <p class="draft fine">This is a draft, last changed {date}. It will keep changing as we learn more.</p>
+        <p class="draft fine">This is a draft, last updated {date}. It will keep changing as we learn more.</p>
       </nav>
 
       <main id="doc" class="doc">
