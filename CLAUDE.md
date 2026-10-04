@@ -5,6 +5,9 @@ the docs are Markdown in `src/content/docs/`, built by Astro.
 Fonts are served from the site (`public/fonts.css`): Archivo for headings
 and labels, Noto Sans for body text (since 4 Oct 2026, wide
 language coverage for a worldwide audience). Inter is banned.
+The interface is a pixel game UI (4 Oct 2026): square corners, thick ink
+borders, hard drop shadows, in `public/pixel-ui.css`, linked last on every
+page and in the docs layout.
 
 ## Every copy change: the Hemingway check
 
