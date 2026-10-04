@@ -493,6 +493,7 @@ tbody td:last-child { color: var(--ink); font-weight: 500; }
 .overview .o-box, .overview .o-node { fill: var(--band); stroke: var(--band-ink); stroke-width: 1.5; }
 .overview .o-back { fill: var(--band); stroke: var(--band-rule); stroke-width: 1.5; }
 .overview .o-ai { fill: var(--band); stroke: var(--band-accent); stroke-width: 1.5; }
+.overview .o-ai.o-open { stroke-dasharray: 5 4; }
 .overview .o-arrow line { stroke: currentColor; stroke-width: 1.5; }
 .overview .o-link { stroke: var(--band-accent); stroke-width: 2; }
 .overview .o-thin { stroke-width: 1.5; }
@@ -798,8 +799,9 @@ tbody td:last-child { color: var(--ink); font-weight: 500; }
           <text class="o-small" x="174" y="386" text-anchor="middle">keep the node on track</text>
 
           <line class="o-link o-thin" x1="174" y1="392" x2="174" y2="408"/>
-          <rect class="o-ai" x="52" y="408" width="244" height="58"/>
+          <rect class="o-ai o-open" x="52" y="408" width="244" height="58"/>
           <text class="o-title" x="66" y="430">LOCAL AI</text>
+          <text class="o-note" x="284" y="430" text-anchor="end">experimental</text>
           <text class="o-small" x="66" y="452">Keeps the record tidy. Never decides.</text>
         </svg>
         <figcaption class="fine">Many nodes, one network body. The body sends the shared principles down, and maintainers send their research back up.</figcaption>

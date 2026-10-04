@@ -57,12 +57,13 @@ updated: 2026-10-02
   <text class="o-small" x="174" y="426" text-anchor="middle">keep the node on track</text>
 
   <line class="o-link o-thin" x1="174" y1="432" x2="174" y2="452"/>
-  <rect class="o-ai" x="52" y="452" width="244" height="64"/>
+  <rect class="o-ai o-open" x="52" y="452" width="244" height="64"/>
   <text class="o-title" x="66" y="474">LOCAL AI</text>
+  <text class="o-note" x="284" y="474" text-anchor="end">experimental</text>
   <text class="o-small" x="66" y="492">Runs on the node's own hardware.</text>
   <text class="o-small" x="66" y="508">Keeps the record tidy. Never decides.</text>
 </svg>
-<figcaption>Every node has makers, supporters and maintainers, and decides things for itself. Maintainers can use local AI for the paperwork, but people make every decision. Above the nodes, the network body looks after the shared principles, and maintainers send their research back up to it. Shared resources are drawn dashed because we haven't decided whether they exist or how they would work.</figcaption>
+<figcaption>Every node has makers, supporters and maintainers, and decides things for itself. Maintainers can use local AI for the paperwork, but people make every decision. Above the nodes, the network body looks after the shared principles, and maintainers send their research back up to it. Shared resources are drawn dashed because we haven't decided whether they exist or how they would work. Local AI is dashed too, because it's still an experiment.</figcaption>
 </figure>
 
 ## The idea behind it
